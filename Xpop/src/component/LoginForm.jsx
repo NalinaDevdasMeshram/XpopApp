@@ -8,7 +8,7 @@ const LoginForm = () => {
   return (
     <div className="container">
       <div className="login-card">
-        <h2>Create your Popx Account</h2>
+        <h3>Create your Popx Account</h3>
         <div className="input-group">
           <label>Full Name</label>
           <input type="text" placeholder="Marry Doe" required />

@@ -75,11 +75,12 @@ form {
   overflow: hidden;
 }
 .login-card {
-  width: 375px;
+  width: 400px;
   min-height: 812px;
   background: #ffffff;
   padding: 40px 24px;
   border: 1px solid #ddd;
+  border: 2px solid green;
 }
 
 .login-card h1 {
@@ -153,26 +154,20 @@ form {
   gap: 10px;
 }
 
-/* AccountSettings.css */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.account-container {
-  width: 360px;
-  min-height: 100vh;
+/*AccountSettings.css*/
+.profile-login-card {
+  width: 400px;
+  min-height: 80vh;
   margin: auto;
   border: 1px solid #d9d9d9;
-  background: #ffffff;
+  background-color: #ecececeb;
   font-family: Arial, sans-serif;
 }
 
-.title {
-  padding: 20px;
-  font-size: 24px;
+.profile-login-card .title {
+  background-color: #ffffff;
+  padding: 15px;
+  font-size: 20px;
   font-weight: 700;
   border-bottom: 1px solid #ececec;
 }
@@ -227,5 +222,10 @@ form {
   color: #555;
   line-height: 1.8;
   font-size: 15px;
+  border-bottom: 1px dashed #d9d9d9;
+}
+
+.bottom-line {
+  margin-top: 450px;
   border-bottom: 1px dashed #d9d9d9;
 }
