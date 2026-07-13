@@ -1,30 +1,50 @@
+import { useNavigate } from "react-router-dom";
 import "../App.css";
 const LoginForm = () => {
+  const navigate = useNavigate();
+  const handleSubmitform = () => {
+    navigate("/ProfileAccount");
+  };
   return (
-    <form>
-      <h2>Create your Popx Account</h2>
-      <label>Full Name</label>
-      <input type="text" placeholder="Marry Doe" required />
-      <label>Phone number</label>
-      <input type="number" placeholder="Marry Doe" required />
-      <label>Email Address</label>
-      <input type="text" placeholder="Marry Doe" required />
-      <label>Password</label>
-      <input type="text" placeholder="Marry Doe" required />
-      <label>Company Name</label>
-      <input type="text" placeholder="Marry Doe" required />
-      <p>Are you an Agency?</p>
-      <label>
-        <input type="radio" name="agency" value="yes" />
-        Yes
-      </label>
-
-      <label>
-        <input type="radio" name="agency" value="no" />
-        No
-      </label>
-      <button>Create Account</button>
-    </form>
+    <div className="container">
+      <div className="login-card">
+        <h2>Create your Popx Account</h2>
+        <div className="input-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Marry Doe" required />
+        </div>
+        <div className="input-group">
+          <label>Phone number</label>
+          <input type="number" placeholder="Marry Doe" required />
+        </div>
+        <div className="input-group">
+          <label>Email Address</label>
+          <input type="text" placeholder="Marry Doe" required />
+        </div>
+        <div className="input-group">
+          <label>Password</label>
+          <input type="text" placeholder="Marry Doe" required />
+        </div>
+        <div className="input-group">
+          <label>Company Name</label>
+          <input type="text" placeholder="Marry Doe" required />
+        </div>
+        <div className="RadioButton">
+          <p>Are you an Agency?</p>
+          <label>
+            <input type="radio" name="agency" value="yes" />
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="agency" value="no" />
+            No
+          </label>
+        </div>
+        <button className="btn-primary" onClick={handleSubmitform}>
+          Create Account
+        </button>
+      </div>
+    </div>
   );
 };
 

@@ -77,55 +77,46 @@ form {
 .login-card {
   width: 375px;
   min-height: 812px;
-
   background: #ffffff;
-
   padding: 40px 24px;
-
   border: 1px solid #ddd;
 }
 
 .login-card h1 {
   width: 220px;
-
   font-size: 40px;
   font-weight: 700;
-
   color: #1a1a1a;
+  margin-bottom: 16px;
+}
 
+.login-card h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1a1a1a;
   margin-bottom: 16px;
 }
 
 .login-card p {
   color: #8c8c8c;
-
   font-size: 20px;
-
   line-height: 1.5;
-
   margin-bottom: 32px;
 }
 
 .input-group {
   position: relative;
-
   margin-bottom: 24px;
 }
 
 .input-group label {
   position: absolute;
-
   top: -10px;
   left: 14px;
-
   background: white;
-
   padding: 0 6px;
-
   color: #8a3ffc;
-
   font-size: 14px;
-
   font-weight: 600;
 }
 
@@ -152,4 +143,89 @@ form {
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
+}
+.RadioButton {
+  font-size: 20px;
+  font-weight: 500;
+}
+.RadioButton label {
+  margin: 10px;
+  gap: 10px;
+}
+
+/* AccountSettings.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.account-container {
+  width: 360px;
+  min-height: 100vh;
+  margin: auto;
+  border: 1px solid #d9d9d9;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 1px solid #ececec;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.avatar-wrapper {
+  position: relative;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.camera-btn {
+  position: absolute;
+  right: -4px;
+  bottom: 2px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 50%;
+  background: #6c3df4;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.user-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+}
+
+.user-info p {
+  margin-top: 4px;
+  color: #666;
+  font-size: 14px;
+}
+
+.description {
+  padding: 0 20px 20px;
+  color: #555;
+  line-height: 1.8;
+  font-size: 15px;
+  border-bottom: 1px dashed #d9d9d9;
 }
